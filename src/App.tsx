@@ -54,7 +54,11 @@ function App() {
         )}
       </div>
       <div className="tool-description">
-        <p>This tool helps you send emails using your DuckDuckGo email.</p>
+        <p>
+          This tool helps you send emails using your DuckDuckGo email.
+          <br />
+          This tool is not an offical tool by DuckDuckGo however its <a href="https://github.com/hadyrashwan/duckduckgo-sender-alias" target="_blank">opensource</a> and doesn't collect your data.
+        </p>
       </div>
     </>
   );
