@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ChakraProvider, Box, Heading, Input, Button, Text, Link, Image, VStack, HStack, Divider, Icon, useClipboard, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { ChakraProvider, Box, Heading, Input, Button, Text, Link, Image, VStack, HStack, Divider, Icon, useClipboard, useColorModeValue } from '@chakra-ui/react';
 import { CopyIcon, CheckIcon } from '@chakra-ui/icons';
 import duckduckgoLogo from './assets/DuckAlias_sender_512x512-removebg-preview-transformed.webp';
 import './App.css';
@@ -10,7 +10,6 @@ function App() {
   const [showGeneratedEmail, setShowGeneratedEmail] = useState(false);
   const [generatedEmail, setGeneratedEmail] = useState('');
   const { hasCopied, onCopy } = useClipboard(generatedEmail);
-  const { colorMode } = useColorMode();
 
   // Retrieve from localStorage when the app loads
   useEffect(() => {
@@ -68,11 +67,11 @@ function App() {
 
   return (
     <ChakraProvider>
-      <Box className="fullscreen-container" display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
-        <VStack spacing={8} align="center" className="card" padding="4" maxWidth="600px" width="100%">
+      <Box className="fullscreen-container">
+        <VStack spacing={8} align="center" className="card" padding="4">
           {/* Logo and Header */}
-          <Box as="a" href="https://github.com/hadyrashwan/duckduckgo-sender-alias" target="_blank">
-            <Image src={duckduckgoLogo} alt="DuckAlias logo" className="logo" />
+          <Box as="a" href="https://vitejs.dev" target="_blank">
+            <Image src={duckduckgoLogo} alt="DuckDuckGo logo" className="logo" />
           </Box>
 
           <Heading size="lg" textAlign="center">
@@ -114,7 +113,7 @@ function App() {
               colorScheme="green"
               size="lg"
               onClick={handleClick}
-              isFullWidth
+              width="100%"
             >
               Generate Alias
             </Button>
