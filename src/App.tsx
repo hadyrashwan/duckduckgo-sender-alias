@@ -70,7 +70,7 @@ function App() {
       <Box className="fullscreen-container">
         <VStack spacing={8} align="center" className="card" padding={4} maxWidth="100%" width="100%">
           {/* Logo and Header */}
-          <Box as="a" href="https://vitejs.dev" target="_blank">
+          <Box as="a" href="https://github.com/hadyrashwan/duckduckgo-sender-alias" target="_blank">
             <Image src={duckduckgoLogo} alt="DuckDuckGo logo" className="logo" boxSize={"200px"} />
           </Box>
 
