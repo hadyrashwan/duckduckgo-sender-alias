@@ -5,13 +5,23 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 16px;
+  padding: 0 1em ;
+  margin: 0;
 }
 
 /* Ensure card width is limited */
 .card {
+  /* width: 80%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--box-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 500px; /* Adjust as needed */
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Adjust text and email box styling */
@@ -56,4 +66,21 @@
 .footer-text {
   font-size: 0.875rem;
   color: var(--text-color);
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media screen and (min-width: 768px) {
+  .fullscreen-container {
+    padding: 0 25em ;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 2rem 1rem;
+  }
+}
+
+.email-value {
+  word-break: break-all;
 }
