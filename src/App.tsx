@@ -72,7 +72,7 @@ function App() {
 
         {/* Introduction */}
         <Box textAlign="center" maxW="450px">
-          <Text fontSize="md" textAlign="center">
+          <Text fontSize="md" color={colors.textColor} textAlign="center">
             Use your pre-generated DuckDuckGo aliases to send emails. Enter your
             DuckDuckGo email and the recipient's email below to generate an
             alias.
@@ -113,12 +113,12 @@ function App() {
 
         {/* Generated Alias */}
         {showGeneratedEmail && (
-          <Box textAlign="center" p={4} borderWidth={1} borderRadius="lg" shadow="md" width="100%" maxW="400px" bg={colors.boxBgColor}>
+          <Box textAlign="center" p={4} borderWidth={1} borderRadius="lg" shadow="md" width="100%" maxW="400px" bg={colors.boxBgColor} className="email-box">
             <Text fontSize="lg" color={colors.textColor} mb={2}>
               Send the email to this alias:
             </Text>
-            <HStack justify="center" spacing={4}>
-              <Text fontWeight="bold" color="green.500" fontSize="lg">
+            <HStack justify="center" spacing={4} className="email-container">
+              <Text fontWeight="bold" color="green.500" fontSize="lg" className="email-text">
                 {generatedEmail}
               </Text>
               <Button size="sm" colorScheme={colors.buttonColorScheme} onClick={onCopy}>

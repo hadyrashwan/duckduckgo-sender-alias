@@ -41,8 +41,23 @@
 
 .card {
   padding: 2em;
+  text-align: center;
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.email-box {
+  overflow-wrap: break-word;
+}
+
+.email-container {
+  overflow: hidden;
+}
+
+.email-text {
+  overflow-wrap: break-word;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
