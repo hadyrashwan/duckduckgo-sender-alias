@@ -71,3 +71,9 @@
 .email-value {
   word-break: break-all;
 }
+
+@media screen and (min-width: 768px) {
+  .fullscreen-container {
+    padding: 0 25em;
+  }
+}

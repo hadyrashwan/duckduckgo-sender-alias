@@ -71,7 +71,7 @@ function App() {
         <VStack spacing={8} align="center" className="card" padding={4} maxWidth="100%" width="100%">
           {/* Logo and Header */}
           <Box as="a" href="https://vitejs.dev" target="_blank">
-            <Image src={duckduckgoLogo} alt="DuckDuckGo logo" className="logo" />
+            <Image src={duckduckgoLogo} alt="DuckDuckGo logo" className="logo" boxSize={"200px"} />
           </Box>
 
           <Heading size="lg" textAlign="center">
@@ -139,7 +139,7 @@ function App() {
           {/* Footer */}
           <Box className="footer" width="80%" px={4}>
             <Text className="footer-text" textAlign="center">
-              This is not an official tool by DuckDuckGo. It's{' '}
+              This is not an official tool by DuckDuckGo. However,  It's{' '}
               <Link href="https://github.com/hadyrashwan/duckduckgo-sender-alias" isExternal color="green.500">
                 open-source
               </Link>{' '}
