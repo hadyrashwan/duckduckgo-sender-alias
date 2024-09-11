@@ -65,12 +65,12 @@ function App() {
     document.documentElement.style.setProperty('--button-text-color', colors.textColor);
   }, [colors]);
 
-  return (
+ return (
     <ChakraProvider>
       <Box className="fullscreen-container">
         <VStack spacing={8} align="center" className="card" padding={4} maxWidth="100%" width="100%">
           {/* Logo and Header */}
-          <Box as="a" href="https://github.com/hadyrashwan/duckduckgo-sender-alias" target="_blank">
+          <Box as="a" href="https://vitejs.dev" target="_blank">
             <Image src={duckduckgoLogo} alt="DuckDuckGo logo" className="logo" />
           </Box>
 
@@ -79,7 +79,7 @@ function App() {
           </Heading>
 
           {/* Introduction */}
-          <Box textAlign="center" maxW="450px" px={4}>
+          <Box textAlign="center" maxW="450px" width="80%" px={4}>
             <Text>
               Use your pre-generated DuckDuckGo aliases to send emails. Enter your
               DuckDuckGo email and the recipient's email below to generate an
@@ -87,10 +87,10 @@ function App() {
             </Text>
           </Box>
 
-          <Divider className="divider" />
+          <Divider className="divider"  width="80%" />
 
           {/* Input Fields */}
-          <VStack spacing={4} width="100%" maxW="400px" px={4}>
+          <VStack spacing={4} width="80%" maxW="400px" px={4}>
             <Input
               type="text"
               value={input1}
@@ -113,7 +113,7 @@ function App() {
               colorScheme="green"
               size="lg"
               onClick={handleClick}
-              width="100%"
+              // width="100%"
             >
               Generate Alias
             </Button>
@@ -121,11 +121,11 @@ function App() {
 
           {/* Generated Alias */}
           {showGeneratedEmail && (
-            <Box className="email-box" width="100%" maxW="400px" px={4}>
+            <Box className="email-box" width="80%" maxW="400px" px={4}>
               <Text className="email-text">
                 Send the email to this alias:
               </Text>
-              <HStack justify="center" width="100%">
+              <HStack justify="center" width="80%">
                 <Text className="email-value" isTruncated maxW="calc(100% - 40px)">
                   {generatedEmail}
                 </Text>
@@ -137,7 +137,7 @@ function App() {
           )}
 
           {/* Footer */}
-          <Box className="footer" width="100%" px={4}>
+          <Box className="footer" width="80%" px={4}>
             <Text className="footer-text" textAlign="center">
               This is not an official tool by DuckDuckGo. It's{' '}
               <Link href="https://github.com/hadyrashwan/duckduckgo-sender-alias" isExternal color="green.500">
