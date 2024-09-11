@@ -14,7 +14,7 @@ DuckAlias Sender is a simple web application that allows users to generate DuckD
 
 ## Demo
 
-You can view the live demo [here](https://duckduckgo-sender-alias.pages.dev/).
+You can view the live demo [here](https://duck-alias.techcrafter.online/).
 
 ## Installation
 
