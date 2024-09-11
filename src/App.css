@@ -68,18 +68,6 @@
   color: var(--text-color);
 }
 
-/* Media query for larger screens (e.g., tablets and desktops) */
-@media screen and (min-width: 768px) {
-  .fullscreen-container {
-    padding: 0 25em ;
-  }
-}
-
-@media (max-width: 480px) {
-  .card {
-    padding: 2rem 1rem;
-  }
-}
 
 .email-value {
   word-break: break-all;
