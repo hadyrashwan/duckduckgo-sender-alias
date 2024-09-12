@@ -126,7 +126,7 @@ function App() {
                 Send the email to this alias:
               </Text>
               <HStack justify="center" width="80%">
-                <Text className="email-value" isTruncated maxW="calc(100% - 40px)">
+                <Text className="email-value"  maxW="calc(80% - 40px)">
                   {generatedEmail}
                 </Text>
                 <Button className="copy-button" onClick={onCopy} flexShrink={0}>
