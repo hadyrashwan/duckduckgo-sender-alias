@@ -1,0 +1,6 @@
+[build]
+  # Build command that Netlify should use to build your site
+  command = "npm i && npm run build"
+  # The directory where the built files are located after running the build command
+  publish = "dist"
+  

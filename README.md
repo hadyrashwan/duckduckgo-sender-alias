@@ -4,6 +4,8 @@
 
 DuckAlias Sender is a simple web application that allows users to generate DuckDuckGo email aliases and send emails through them. This app is built using **React**, **Chakra UI**, and **localStorage** to provide a smooth user experience. The app also supports dark mode.
 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/hadyrashwan/duckduckgo-sender-alias)
+
 ## Features
 
 - **Alias Generation**: Enter your DuckDuckGo email and the recipient's email to generate a masked alias.
@@ -22,7 +24,7 @@ You can view the live demo [here](https://duck-alias.techcrafter.online/).
 
    ```bash
    git clone https://github.com/hadyrashwan/duckduckgo-sender-alias
-   cd duckalias-sender
+   cd duckduckgo-sender-alias
    ```
 
 2. **Install the dependencies**:
